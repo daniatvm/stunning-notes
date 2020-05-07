@@ -1,0 +1,31 @@
+<div class="container">
+    <h2 class="text-center mb-4 d-flex justify-content-center align-items-center">Hello {{name}} <a href="/notes/add"><i
+                class="fas fa-plus-square pl-4"></i></a></h2>
+</div>
+<div class="row">
+    {{#each notes}}
+    <div class="col-sm-4">
+        <div class="card my-border mb-3 my-card">
+            <div class="card-body d-flex flex-column">
+                <h4 class="card-title d-flex justify-content-between">
+                    {{title}} <a href="/notes/edit/{{_id}}"><i class="fas fa-pen-square pl-2"></i></a>
+                </h4>
+                <p>{{description}}</p>
+                <form class="mt-auto" action="/notes/delete/{{_id}}?_method=DELETE" method="POST">
+                    <input type="hidden" name="_method" value="DELETE">
+                    <button type="submit" class="btn btn-outline-primary btn-block btn-sm">
+                        Delete
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    {{else}}
+    <div class="card my-border m-4 mx-auto">
+        <div class="card-body">
+            <p class="lead text-center">Pretty empty huh? We don't have any notes to display. <br>
+            Create one by clicking the + button by your name.</p>
+        </div>
+    </div>
+    {{/each}}
+</div>

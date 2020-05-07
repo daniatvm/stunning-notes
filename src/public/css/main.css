@@ -1,0 +1,66 @@
+body{
+    /* background: #ee9ca7;
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);
+    background: linear-gradient(to right, #ffdde1, #ee9ca7);  */
+    background-color: #cea2a9;
+}
+
+*{
+    font-weight: 100;
+}
+
+.my-border{
+    border: 1px solid #af7e87;
+}
+
+.card{
+    background-color: #ffc1cb;
+}
+
+.my-card{
+    height: 200px;
+    overflow: auto;
+}
+
+.navbar{
+    padding: 0;
+}
+
+.jumbotron{
+    background-color: #ffc1cb;
+}
+
+.my-footer{
+    background-color: #cea2a9;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #cea2a9; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #af7e87;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8d5b64; 
+}
+
+.my-img{
+    height: 200px;
+    width: auto;
+}
+
+.my-a{
+    color: #996a73;
+}
+
+@media only screen and (max-width: 768px) {
+    .my-container{
+        flex-wrap: wrap;
+    }
+}

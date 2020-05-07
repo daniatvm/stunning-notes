@@ -1,0 +1,7 @@
+{{!-- como un if pero mejor. --}}
+{{#each errors}}
+<div class="alert alert-dismissible alert-danger">
+    <button type="button" class="close" data-dismiss="alert">&times;</button>
+    {{text}}
+</div>
+{{/each}}
